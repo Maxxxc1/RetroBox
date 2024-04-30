@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS retrobox_db;
+CREATE DATABASE retrobox_db;
