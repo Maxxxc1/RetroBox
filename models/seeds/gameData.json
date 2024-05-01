@@ -1,0 +1,10 @@
+[
+    {
+      "title": "Super Mario Bros",
+      "year": 1985,
+      "genre": "Fantasy",
+      "image_url": "./images/nintendo/images/nintendo/mario_brothers_original_nintendo.jpg",
+      "developer": "Nintendo", 
+      "console": "Nintendo"
+    }
+]
