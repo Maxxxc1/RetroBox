@@ -15,7 +15,7 @@ Game.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    release_date: {
+    year: {
       type: DataTypes.DATE,
       allowNull: true,
     },

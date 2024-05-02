@@ -6,5 +6,13 @@
       "image_url": "./images/nintendo/images/nintendo/mario_brothers_original_nintendo.jpg",
       "developer": "Nintendo", 
       "console": "Nintendo"
+    },
+    {
+      "title": "Contra",
+      "year": 1987,
+      "genre": "Action",
+      "image_url": "./images/nintendo/images/nintendo/contra_nintendo.jpeg",
+      "developer": "Konami", 
+      "console": "Nintendo"
     }
 ]
