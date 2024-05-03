@@ -1,0 +1,27 @@
+body {
+    font-size: 700%;
+    font-weight: 400%;
+    /* background-color: rgb(236, 57, 57);   */
+    font-family: share tech mono;
+    text-shadow: 8px 8px 8px rgb(252, 251, 251);
+    color: #fb0101; /* Set the text color */
+    text-shadow: 
+    -2px -2px 0 #fdfcfc, 
+    2px -2px 0 #fafafa, 
+    -2px  2px 0 #f9f7f7, 
+    2px  2px 0 #fbfafa; 
+    
+}
+
+form {
+    font-family: share tech mono;
+    font-size: 25%;
+    padding: 20px 28px;
+    position: absolute;
+    top: 100px;
+    right: 10px; 
+    margin-right: -25px ;
+    
+}
+
+
