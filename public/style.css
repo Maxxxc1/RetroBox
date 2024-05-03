@@ -24,4 +24,15 @@ form {
     
 }
 
+#signupButton {
+    font-family: share tech mono;
+    font-size: 25%;
+    padding: 20px 28px;
+    position: absolute;
+    top: 100px;
+    right: 15px; 
+    
+}
+
+
 
