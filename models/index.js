@@ -4,10 +4,39 @@ const GamesCompleted = require('./GamesCompleted');
 const GamesPlaying = require('./GamesPlaying');
 const GamesToComplete = require('./GamesToComplete');
 
-// User.belongsToMany(Games, {
-//   foreignKey: 'user_id',
-//   through:,
-//   onDelete:'CASCADE'
-// })
+// GAMES COMPLETED
+User.belongsToMany(Game, {
+    foreignKey: 'user_id',
+    through: GamesCompleted
+})
 
-module.exports = { User, Game, GamesCompleted, GamesPlaying, GamesToComplete};
+Game.belongsToMany(User, {
+    foreignKey: 'game_id',
+    through: GamesCompleted
+})
+
+// GAMES PLAYING 
+User.belongsToMany(Game, {
+    foreignKey: 'user_id',
+    through: GamesPlaying,
+})
+
+Game.belongsToMany(User, {
+    foreignKey: 'game_id',
+    through: GamesPlaying
+})
+
+// GAMES TO COMPLETE
+User.belongsToMany(Game, {
+    foreignKey: 'user_id',
+    through: GamesToComplete,
+})
+
+Game.belongsToMany(User, {
+    foreignKey: 'game_id',
+    through: GamesToComplete
+})
+
+
+
+module.exports = { User, Game, GamesCompleted, GamesPlaying, GamesToComplete };
