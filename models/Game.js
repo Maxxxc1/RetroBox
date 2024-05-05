@@ -35,7 +35,11 @@ Game.init(
     developer: {
         type: DataTypes.STRING,
         allowNull: true,
-    }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+  }
   },
   {
     sequelize,
