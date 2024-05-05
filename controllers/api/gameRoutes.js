@@ -7,24 +7,29 @@ router.get('/', async (req, res) => {
       // Get all games
       const gameData = await Game.findAll({});
       // Serialize data so the template can read it - NOT NECESSARY UNLESS RENDERING INTO A TEMPLATE?
-      // const games = gameData.map((game) => game.get({ plain: true }));
-      res.status(200).json(gameData);
+      const games = gameData.map((game) => game.get({ plain: true }));
+      //res.status(200).json(gameData);
+      res.render('homepage', {
+        games,
+        logged_in: req.session.logged_in
+      });
     } catch (err) {
         res.status(400).json(err);
     }
   });
+  
 // get one game by its id
-  router.get('/:id', async (req, res) => {
-    try {
-      const gameData = await Game.findByPk(req.params.id);
-      if (!gameData) {
-        res.status(404).json({ message: "No game found with this id!" });
-      }
-      res.status(200).json(gameData);
-    } catch (err) {
-      res.status(500).json(err);
+router.get('/:id', async (req, res) => {
+  try {
+    const gameData = await Game.findByPk(req.params.id);
+    if (!gameData) {
+      res.status(404).json({ message: "No game found with this id!" });
     }
-  });
+    res.status(200).json(gameData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // to create a new game 
 router.post('/', withAuth, async (req, res) => {

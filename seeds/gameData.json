@@ -3,7 +3,7 @@
       "title": "Super Mario Bros",
       "year": 1985,
       "genre": "Fantasy",
-      "img_url": "images/nintendo/mario_brothers_original_nintendo.jpg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png",
       "developer": "Nintendo", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -11,7 +11,7 @@
       "title": "Contra",
       "year": 1987,
       "genre": "Action",
-      "img_url": "images/nintendo/contra_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/6/65/Contra_cover.jpg",
       "developer": "Konami", 
       "console": "Nintendo Entertainment System (NES)"
     }, 
@@ -19,7 +19,7 @@
       "title": "Metroid",
       "year": 1987,
       "genre": "Action-Adventure",
-      "img_url": "https://en.wikipedia.org/wiki/File:Metroid_boxart.jpg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/5/5d/Metroid_boxart.jpg",
       "developer": "Nintendo R&D1, Intelligent Systems", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -27,7 +27,7 @@
       "title": "The Legend of Zelda",
       "year": 1987,
       "genre": "Action-Adventure",
-      "img_url": "https://en.wikipedia.org/wiki/File:Legend_of_zelda_cover_(with_cartridge)_gold.png",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/4/41/Legend_of_zelda_cover_%28with_cartridge%29_gold.png",
       "developer": "Nintendo R&D4", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -35,7 +35,7 @@
       "title": "Castlevania",
       "year": 1987,
       "genre": "Action-Adventure",
-      "img_url": "https://en.wikipedia.org/wiki/File:Castlevania_1_cover.png",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Castlevania_1_cover.png",
       "developer": "Konami", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -43,7 +43,7 @@
       "title": "Punch-Out!!",
       "year": 1987,
       "genre": "Action-Adventure",
-      "img_url": "./images/nintendo/images/nintendo/Punchout_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/3/3d/Punch-out_mrdream_boxart.PNG",
       "developer": "Nintendo R&D3", 
       "console": "Nintendo Entertainment System (NES)"
     }, 
@@ -51,7 +51,7 @@
       "title": "Duck Hunt",
       "year": 1985,
       "genre": "Light gun shooter, sports, shooting gallery",
-      "img_url": "./images/nintendo/images/nintendo/duck_hunt_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/1/14/DuckHuntBox.jpg",
       "developer": "Nintendo R&D1, Intelligent Systems", 
       "console": "Nintendo Entertainment System (NES)"
     }, 
@@ -59,7 +59,7 @@
       "title": "Kid Icarus",
       "year": 1987,
       "genre": "Platform",
-      "img_url": "./images/nintendo/images/nintendo/kid_icarus_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/b/b1/Kid_Icarus_NES_box_art.png",
       "developer": "Nintendo R&D1", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -67,7 +67,7 @@
       "title": "Kirby's Adventure",
       "year": 1993,
       "genre": "Platform",
-      "img_url": "./images/nintendo/images/nintendo/kirbys_adventure_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/a/ae/Kirby%27s_Adventure_Coverart.png",
       "developer": "HAL Laboratory", 
       "console": "Nintendo Entertainment System (NES)"
     },
@@ -75,7 +75,7 @@
       "title": "Mega Man",
       "year": 1987,
       "genre": "Platform",
-      "img_url": "./images/nintendo/images/nintendo/mega_man_nintendo.jpeg",
+      "img_url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Rockman_1987.jpg",
       "developer": "Capcom", 
       "console": "Nintendo Entertainment System (NES)"
     }
