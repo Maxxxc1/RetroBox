@@ -1,7 +1,7 @@
 [
     {
       "title": "Super Mario Bros",
-      "release_date": 1985,
+      "year": 1985,
       "genre": "Fantasy",
       "image_url": "./images/nintendo/images/nintendo/mario_brothers_original_nintendo.jpg",
       "developer": "Nintendo", 

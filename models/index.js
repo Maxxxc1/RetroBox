@@ -10,4 +10,4 @@ const GamesToComplete = require('./GamesToComplete');
 //   onDelete:'CASCADE'
 // })
 
-module.exports = { User, Game, GamesCompleted,GamesPlaying,GamesToComplete};
+module.exports = { User, Game, GamesCompleted, GamesPlaying, GamesToComplete};
