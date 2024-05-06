@@ -1,16 +1,11 @@
 body {
-    font-size: 100%;
-    font-weight: 400%;
+    font-size: 200%;
+    font-weight: 300%;
     /* background-color: rgb(236, 57, 57);   */
     font-family: share tech mono;
-    text-shadow: 8px 8px 8px rgb(252, 251, 251);
-    color: #fb0101; /* Set the text color */
-    text-shadow: 
-    -2px -2px 0 #fdfcfc, 
-    2px -2px 0 #fafafa, 
-    -2px  2px 0 #f9f7f7, 
-    2px  2px 0 #fbfafa; 
-    
+    text-shadow: 8px 8px 8px rgb(255, 255, 255);
+    color: #01eafb; /* Set the text color */
+
 }
 
 form {
@@ -19,9 +14,9 @@ form {
     padding: 20px 28px;
     position: absolute;
     top: 100px;
-    right: 10px; 
+    right: 10px;
     margin-right: -25px ;
-    
+
 }
 
 #signupButton {
@@ -30,27 +25,17 @@ form {
     padding: 20px 28px;
     position: absolute;
     top: 100px;
-    right: 15px; 
-    
+    right: 15px;
+
+}
+
+header {
+    background-color: #ff3c00e7;
+    border-style: solid; color: black;
+    margin-bottom: 40px;
+
 }
 
  .background {
     background-image: url(./8bitcityscape.png);
  }
-header {
-    background-color:blue; 
-=======
-
-.sm_img {
-    width: 200px;
-    height: 325px;
-
-}
-
-
-
-
-
-
-
-
