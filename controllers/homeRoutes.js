@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Game, User } = require('../models');
+const { Game, User, GamesCompleted } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -29,8 +29,9 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
+
     res.render('profile', {
-      ...user,
+      ...user, 
       logged_in: true
     });
   } catch (err) {

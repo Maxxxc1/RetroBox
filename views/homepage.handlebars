@@ -1,13 +1,9 @@
 <!-- Loop over each object in the games array -->
 {{#each games as |game| }}
 <div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
+  <div class="col-md-5 small_img">
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <img src="{{game.img_url}}" alt="{{game.title}}">
-
-
-    </h2>
+      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">
   </div>
 </div>
 {{/each}}
