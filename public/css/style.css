@@ -33,9 +33,11 @@ form {
     right: 15px; 
     
 }
-
-.navBackground {
-    background-color:blue;
+ .background {
+    background-image: url(./8bitcityscape.png);
+ }
+header {
+    background-color:blue; 
 }
 
 
