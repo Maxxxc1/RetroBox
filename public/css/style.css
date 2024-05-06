@@ -1,5 +1,5 @@
 body {
-    font-size: 700%;
+    font-size: 100%;
     font-weight: 400%;
     /* background-color: rgb(236, 57, 57);   */
     font-family: share tech mono;
@@ -33,6 +33,13 @@ form {
     right: 15px; 
     
 }
+
+.sm_img {
+    width: 200px;
+    height: 325px;
+}
+
+
 
 
 
