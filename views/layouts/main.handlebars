@@ -11,11 +11,11 @@
 
 </head>
 
-<body>
+<body class="">
     <div class="">
-        <header class="">
+        <header class="navBackground">
             <h1>RetroBox</h1>
-            <nav>
+            <nav class="">
                 <!-- Conditionally render login or logout links -->
                 {{#if logged_in}}
                 <a href="/profile">profile</a>
@@ -26,8 +26,11 @@
             </nav>
         </header>
         <main>
+            
             <!-- render the sub layout -->
-            {{{body}}}
+           
+                {{{body}}}
+           
         </main>
         <footer>
 
