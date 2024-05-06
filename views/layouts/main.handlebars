@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RetroBox</title>
 
-    {{!--
-    <link rel="stylesheet" href="/css/jass.css"> --}}
 
-    <link rel="stylesheet" href="/RetroBox/public/style.css">
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
-<body>
+<body class="">
     <div class="">
-        <header class="">
+        <header class="navBackground">
             <h1>RetroBox</h1>
-            <nav>
+            <nav class="">
                 <!-- Conditionally render login or logout links -->
                 {{#if logged_in}}
                 <a href="/profile">profile</a>
@@ -27,8 +27,11 @@
             </nav>
         </header>
         <main>
+            
             <!-- render the sub layout -->
-            {{{body}}}
+           
+                {{{body}}}
+           
         </main>
         <footer>
 
