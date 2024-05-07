@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Game, GamesCompleted, User} = require('../../models');
+const { Game, GameStatus, User} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {

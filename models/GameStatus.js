@@ -1,19 +1,19 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require('../config/connection');
 
-class GamesToComplete extends Model {}
+class GameStatus extends Model {}
 
-GamesToComplete.init(
+GameStatus.init(
   {
     // define columns
-    // id columns for the games to complete table
+    // id columns for the games completed table
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    // foreign key connection for the user table
+    // foregin key connection for the user table
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -21,7 +21,7 @@ GamesToComplete.init(
         key: 'id'
       }
     },
-    // foreign key connection for the games table
+    // foregin key connection for the games table
     game_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -29,14 +29,26 @@ GamesToComplete.init(
         key: 'id'
       }
     },
+    completed: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },
+    playing: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },
+    wish: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,          
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'games_to_complete',
+    modelName: 'games_status',
   }
 );
 
-module.exports = GamesToComplete;
+module.exports = GameStatus;

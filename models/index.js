@@ -1,43 +1,18 @@
 const User = require('./User');
 const Game = require('./Game');
-const GamesCompleted = require('./GamesCompleted');
-const GamesPlaying = require('./GamesPlaying');
-const GamesToComplete = require('./GamesToComplete');
+const GameStatus = require('./GameStatus');
 
-// GAMES COMPLETED
-// users belong to many games (through GamesCompleted)
+
+// GAMES satus
+// users belong to many games (through GameStatus)
 User.belongsToMany(Game, {
-    through: GamesCompleted,
+    through: GameStatus,
     foreignKey: 'user_id',
 });
 
 Game.belongsToMany(User, {
     foreignKey: 'game_id',
-    through: GamesCompleted
+    through: GameStatus
 });
 
-// GAMES PLAYING 
-User.belongsToMany(Game, {
-    foreignKey: 'user_id',
-    through: GamesPlaying,
-});
-
-Game.belongsToMany(User, {
-    foreignKey: 'game_id',
-    through: GamesPlaying
-});
-
-// GAMES TO COMPLETE
-User.belongsToMany(Game, {
-    foreignKey: 'user_id',
-    through: GamesToComplete,
-});
-
-Game.belongsToMany(User, {
-    foreignKey: 'game_id',
-    through: GamesToComplete
-})
-
-
-
-module.exports = { User, Game, GamesCompleted, GamesPlaying, GamesToComplete };
+module.exports = { User, Game, GameStatus};
