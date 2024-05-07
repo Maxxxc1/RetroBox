@@ -1,0 +1,47 @@
+[
+  {
+    "user_id": 1,
+    "game_id": 6,
+    "playing":true, 
+    "completed": false,
+    "wish":false
+
+  },
+  {
+    "user_id": 2,
+    "game_id": 6,
+    "playing":false, 
+    "completed":true,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 3,
+    "game_id": 5,
+    "playing":false, 
+    "completed":false,
+    "wish":true
+
+  },
+ 
+  {
+    "user_id": 4,
+    "game_id": 8,
+    "playing":true, 
+    "completed":false,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 2,
+    "game_id": 9,
+    "playing":false, 
+    "completed":true,
+    "wish":false
+
+  }
+ 
+]
+
