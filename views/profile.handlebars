@@ -5,25 +5,23 @@
 </div>
 
 <!-- Loop over each object in the games array -->
-{{#each games as |game| }}
+{{#each gamesCompleted as |game| }}
 <div class="row mb-4">
-  <div class="col-md-5 small_img">
+  <!--<div class="col-md-5 small_img">
       <!-- Call helper function with triple brackets to render the emoji span as HTML 
-      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">-->
-      <h2>HERE {{game.completed}}</h2>
+      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">
+      <h2>Game Completed id: {{game.id}}</h2>
+  </div>-->
+  <div class=""> <!--image holder-->
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      <img class="" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
   </div>
 </div>
 {{/each}}
 
-{{#each games as |game| }}
-<div class="row mb-4">
-  <div class="col-md-5 small_img">
-      <!-- Call helper function with triple brackets to render the emoji span as HTML 
-      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">-->
-      <h2>HERE {{game.game_id}}</h2>
-  </div>
-</div>
-{{/each}}
+
+
+
 
 <!--<div class="row mt-4">
   <div class="col-md-6">

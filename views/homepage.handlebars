@@ -1,20 +1,20 @@
 <!-- Loop over each object in the games array -->
 <div class="category">
-{{#each completed as |GamesCompleted| }}
+{{#each games as |game| }}
 <div class="card-complete"><!-- card holder-->
   <div class=""> <!--image holder-->
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <img class="" src="{{GamesCompleted.img_url}}" alt="{{GamesCompleted.description}}"> <!-- you only add this alt text and description it exists -->
+      <img class="" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
   </div>
-  <p class ="">{{GamesCompleted.name}}</p> <!-- this name is whatever is being sent from the back end, could be "title", could be whatever-->
+  <p class ="">{{game.name}}</p> <!-- this name is whatever is being sent from the back end, could be "title", could be whatever-->
 </div>
 {{/each}}
 
 
-<!-- Loop over each object in the games array -->
+<!-- Loop over each object in the games array 
 <div class="category">
 {{#each playing as |GamesPlaying| }}
-<div class="card-playing"><!-- card holder-->
+<div class="card-playing"><!-- card holder
   <div class=""> <!--image holder-->
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       <img class="" src="{{GamesPlaying.img_url}}" alt="{{GamesPlaying.description}}"> <!-- you only add this alt text and description it exists -->
@@ -25,15 +25,15 @@
 </div>
 
 
-<!-- Loop over each object in the games array -->
+<!-- Loop over each object in the games array 
 <div class="category">
 {{#each wishlist as |GamesToComplete| }}
 <div class="card-wish"><!-- card holder-->
   <div class=""> <!--image holder-->
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <img class="" src="{{GamesToComplete.img_url}}" alt="{{GamesToComplete.description}}"> <!-- you only add this alt text and description it exists -->
+      <!-- Call helper function with triple brackets to render the emoji span as HTML 
+      <img class="" src="{{GamesToComplete.img_url}}" alt="{{GamesToComplete.description}}"> <!-- you only add this alt text and description it exists 
   </div>
-  <p class ="">{{GamesToComplete.name}}</p> <!-- this name is whatever is being sent from the back end, could be "title", could be whatever-->
+  <p class ="">{{GamesToComplete.name}}</p> <!-- this name is whatever is being sent from the back end, could be "title", could be whatever
 </div>
 {{/each}}
-</div>
+</div> -->
