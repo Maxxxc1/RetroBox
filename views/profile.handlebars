@@ -29,7 +29,7 @@
   {{/each}}
 </div>
 
-<h2>Games On Your Wishlist:</h2>
+<h2>Games On Wishlist:</h2>
 <div class="profile_row">
   {{#each gamesWishlist as |game| }}
   <div class="row mb-4">
@@ -37,12 +37,25 @@
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
         <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
     </div>
+  </div>
+  {{/each}}
+</div>
+
+<!--
+<h2>Games On Your Wishlist:</h2>
+<div class="profile_row">
+  {{#each gamesWishlist as |game| }}
+  <div class="row mb-4">
+    <div class=""> <!--image holder
+        <!-- Call helper function with triple brackets to render the emoji span as HTML
+        <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists 
+    </div>
     <div class="col-md-4 wishlist_list">
         <button class="btn btn-sm btn-danger" data-id="{{game.id}}">Remove</button>
     </div>
   </div>
   {{/each}}
-</div>
+</div> -->
 
 <script src="./js/profile.js"></script>
 
