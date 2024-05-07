@@ -1,3 +1,5 @@
+/************ FORM EVENT HANDLER FOR PROFILE PAGE *********************/
+
 /*const newFormHandler = async (event) => {
   event.preventDefault();
 
