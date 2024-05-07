@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Game, User, GamesCompleted } = require('../models');
+const { Game, User, GameStatus } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -24,14 +24,30 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      //include: [{ model: Project }],
+
     });
 
+    const gamesCompletedData = await GameStatus.findAll({
+      where: {
+        user_id: req.session.user_id,
+        completed: true,
+      },    
+    });
+
+    const allUserGames = await GameStatus.findAll({
+      where: {
+        user_id: req.session.user_id
+      },
+    });  
+
     const user = userData.get({ plain: true });
-
-
+    // Serialize data so the template can read it - NOT NECESSARY UNLESS RENDERING INTO A TEMPLATE?
+    const games = gamesCompletedData.map((game) => game.get({ plain: true }));
+    const userGames = allUserGames.map((game) => game.get({ plain: true}));
+    
+    //console.log('Test' + games);
     res.render('profile', {
-      ...user, 
+      user, games, userGames, 
       logged_in: true
     });
   } catch (err) {

@@ -1,8 +1,29 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome, {{user.name}}!</h2>
   </div>
 </div>
+
+<!-- Loop over each object in the games array -->
+{{#each games as |game| }}
+<div class="row mb-4">
+  <div class="col-md-5 small_img">
+      <!-- Call helper function with triple brackets to render the emoji span as HTML 
+      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">-->
+      <h2>HERE {{game.completed}}</h2>
+  </div>
+</div>
+{{/each}}
+
+{{#each games as |game| }}
+<div class="row mb-4">
+  <div class="col-md-5 small_img">
+      <!-- Call helper function with triple brackets to render the emoji span as HTML 
+      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">-->
+      <h2>HERE {{game.game_id}}</h2>
+  </div>
+</div>
+{{/each}}
 
 <!--<div class="row mt-4">
   <div class="col-md-6">
@@ -45,4 +66,4 @@
   {{/if}}
 </div> -->
 
-<script src="./js/profile.js"></script>
+<!--<script src="./js/profile.js"></script>-->
