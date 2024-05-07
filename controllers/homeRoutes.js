@@ -32,30 +32,29 @@ router.get('/profile', withAuth, async (req, res) => {
       where: {
         user_id: req.session.user_id,
         completed: true,
-      }, 
-    });
-/*
+      },  
+        
+    }); 
+
     const gamesPlayingData = await GameStatus.findAll({
       where: {
         user_id: req.session.user_id,
         playing: true,
-      },
-    }); 
-    
+      },  
+        
+    });
+
     const gamesWishlistData = await GameStatus.findAll({
       where: {
         user_id: req.session.user_id,
         wish: true,
-      },
+      },  
+        
     });
-     
-*/
-    let myCompletedGames = gamesCompletedData.map((game) => game.game_id);
-//    let myPlayingGames = gamesPlayingData.map((game) => game.game_id);
-//    let myWishlistGames = gamesWishlistData.map((game) => game.game_id);
 
-    console.log(myCompletedGames);
-//    console.log(myPlayingGames);
+    let myCompletedGames = gamesCompletedData.map((game) => game.game_id);
+    let myPlayingGames = gamesPlayingData.map((game) => game.game_id);
+    let myWishlistGames = gamesWishlistData.map((game) => game.game_id);
 
     const userGamesCompletedData = await Game.findAll({
       where: {
@@ -65,7 +64,7 @@ router.get('/profile', withAuth, async (req, res) => {
       }
     });
 
-/*    const userGamesPlayingData = await Game.findAll({
+    const userGamesPlayingData = await Game.findAll({
       where: {
         id: {
           [Sequelize.Op.in] : myPlayingGames
@@ -80,21 +79,23 @@ router.get('/profile', withAuth, async (req, res) => {
         }
       }
     });
-*/
+
     
 
     const user = userData.get({ plain: true });
     // Serialize data so the template can read it - NOT NECESSARY UNLESS RENDERING INTO A TEMPLATE?
     const gamesCompleted = userGamesCompletedData.map((game) => game.get(({ plain: true})));
-//    const userGamesPlayingSerialized = userGamesPlayingData.map((game) => game.get(({ plain: true})));
-//    const userGamesWishlistSerialized = userGamesWishlistData.map((game) => game.get(({ plain: true})));
+    const gamesPlaying = userGamesPlayingData.map((game) => game.get(({ plain: true})));
+    const gamesWishlist = userGamesWishlistData.map((game) => game.get(({ plain: true})));
 
     //console.log(userGamesCompleted);
     console.log(gamesCompleted);
+
+
     
     //console.log('Test' + games);
     res.render('profile', {
-      user, gamesCompleted, //, userGamesPlayingSerialized, userGamesWishlistSerialized, 
+      user, gamesCompleted, gamesPlaying, gamesWishlist,
       logged_in: true
     });
   } catch (err) {
