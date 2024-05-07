@@ -55,4 +55,16 @@ header {
     justify-content: center;
  }
 
+ .sm_img {
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+ }
+
+ .profile_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+ }
+
 
