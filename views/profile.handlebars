@@ -9,11 +9,6 @@
   <!-- Loop over each object in the games array -->
   {{#each gamesCompleted as |game| }}
   <div class="row mb-4">
-    <!--<div class="col-md-5 small_img">
-        <!-- Call helper function with triple brackets to render the emoji span as HTML 
-        <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">
-        <h2>Game Completed id: {{game.id}}</h2>
-    </div>-->
     <div class=""> <!--image holder-->
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
         <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
@@ -22,36 +17,32 @@
   {{/each}}
 </div>
 
-{{#each gamesPlaying as |game| }}
-<div class="row mb-4">
-  <!--<div class="col-md-5 small_img">
-      <!-- Call helper function with triple brackets to render the emoji span as HTML 
-      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">
-      <h2>Game Completed id: {{game.id}}</h2>
-  </div>-->
-  <div class=""> <!--image holder-->
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <h2>Game Playing:</h2>
-      <img class="" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
+<h2>Games Playing:</h2>
+<div class="profile_row">
+  {{#each gamesPlaying as |game| }}
+  <div class="row mb-4">
+    <div class=""> <!--image holder-->
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
+    </div>
   </div>
+  {{/each}}
 </div>
-{{/each}}
 
-{{#each gamesWishlist as |game| }}
-<div class="row mb-4">
-  <!--<div class="col-md-5 small_img">
-      <!-- Call helper function with triple brackets to render the emoji span as HTML 
-      <img class="sm_img" src="{{game.img_url}}" alt="{{game.title}}">
-      <h2>Game Completed id: {{game.id}}</h2>
-  </div>-->
-  <div class=""> <!--image holder-->
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <h2>Game On Wishlist:</h2>
-      <img class="" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
+<h2>Games On Your Wishlist:</h2>
+<div class="profile_row">
+  {{#each gamesWishlist as |game| }}
+  <div class="row mb-4">
+    <div class=""> <!--image holder-->
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
+    </div>
+    <div class="col-md-4 wishlist_list">
+        <button class="btn btn-sm btn-danger" data-id="{{game.id}}">Remove</button>
+    </div>
   </div>
+  {{/each}}
 </div>
-{{/each}}
-
 
 <script src="./js/profile.js"></script>
 
@@ -99,4 +90,4 @@
   {{/if}}
 </div> -->
 
-<!--<script src="./js/profile.js"></script>-->
+<script src="./js/profile.js"></script>
