@@ -103,6 +103,26 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+router.delete('/profile/:id', withAuth, async (req, res) => {
+  try {
+    const gameStatusData = await GameStatus.destroy({
+      where: {
+        user_id: req.session.user_id,
+        game_id: req.params.id,
+      },
+    });
+
+    if (!gameStatusData) {
+      res.status(404).json({ message: 'No game found with this id!' });
+      return;
+    }
+
+    res.status(200).json(gameStatusData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 // router.get('/blog/:id', async (req, res) => {
 //   try {
 //     const blogData = await Blog.findByPk(req.params.id, {

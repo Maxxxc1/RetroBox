@@ -18,7 +18,7 @@
  
   {
     "user_id": 3,
-    "game_id": 5,
+    "game_id": 7,
     "playing":false, 
     "completed":false,
     "wish":true
@@ -35,7 +35,7 @@
   },
  
   {
-    "user_id": 2,
+    "user_id": 4,
     "game_id": 9,
     "playing":false, 
     "completed":true,
@@ -70,7 +70,7 @@
   },
  
   {
-    "user_id": 2,
+    "user_id": 3,
     "game_id": 5,
     "playing":true, 
     "completed":false,
@@ -87,20 +87,20 @@
 
   },
   {
-    "user_id": 1,
-    "game_id": 5,
-    "playing":false, 
-    "completed":true,
+    "user_id": 3,
+    "game_id": 9,
+    "playing":true, 
+    "completed": false,
     "wish":false
 
   },
  
   {
-    "user_id": 4,
-    "game_id": 7,
+    "user_id": 2,
+    "game_id": 4,
     "playing":false, 
-    "completed": false,
-    "wish":true
+    "completed": true,
+    "wish":false
 
   },
  
@@ -110,6 +110,121 @@
     "playing": false, 
     "completed":true,
     "wish":false
+
+  },
+
+  {
+    "user_id": 3,
+    "game_id": 8,
+    "playing":false, 
+    "completed":true,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 4,
+    "game_id": 3,
+    "playing":false, 
+    "completed":true,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 2,
+    "game_id": 3,
+    "playing":true, 
+    "completed":false,
+    "wish":false
+
+  },
+
+  {
+    "user_id": 1,
+    "game_id": 3,
+    "playing": true, 
+    "completed": false,
+    "wish":false
+
+  },
+  {
+    "user_id": 1,
+    "game_id": 5,
+    "playing":false, 
+    "completed":true,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 1,
+    "game_id": 7,
+    "playing":true, 
+    "completed": false,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 2,
+    "game_id": 1,
+    "playing": false, 
+    "completed": false,
+    "wish": true
+
+  },
+
+  {
+    "user_id": 2,
+    "game_id": 2,
+    "playing":false, 
+    "completed":false,
+    "wish":true
+
+  },
+ 
+  {
+    "user_id": 2,
+    "game_id": 8,
+    "playing":false, 
+    "completed":false,
+    "wish":true
+
+  },
+
+  {
+    "user_id": 3,
+    "game_id": 2,
+    "playing": false, 
+    "completed": false,
+    "wish":true
+
+  },
+  {
+    "user_id": 3,
+    "game_id": 3,
+    "playing":false, 
+    "completed":false,
+    "wish":true
+
+  },
+ 
+  {
+    "user_id": 1,
+    "game_id": 1,
+    "playing":true, 
+    "completed": false,
+    "wish":false
+
+  },
+ 
+  {
+    "user_id": 2,
+    "game_id": 9,
+    "playing": false, 
+    "completed": false,
+    "wish": true
 
   }
  

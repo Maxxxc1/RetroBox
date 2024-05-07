@@ -23,12 +23,14 @@
     }
   }
 };
-
+*/
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/projects/${id}`, {
+    console.log("DELETE HERE");
+
+    const response = await fetch(`/profile/${id}`, {
       method: 'DELETE',
     });
 
@@ -40,10 +42,12 @@ const delButtonHandler = async (event) => {
   }
 };
 
+/*
 document
   .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
+*/
 
 document
-  .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);*/
+  .querySelector('.wishlist_list')
+  .addEventListener('click', delButtonHandler);
