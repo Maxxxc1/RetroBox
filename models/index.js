@@ -12,7 +12,12 @@ User.belongsToMany(Game, {
 
 Game.belongsToMany(User, {
     foreignKey: 'game_id',
-    through: GameStatus
+    through: GameStatus,
+});
+
+Game.belongsToMany(GameStatus, {
+    foreignKey: 'game_id',
+    through: User,
 });
 
 module.exports = { User, Game, GameStatus};
