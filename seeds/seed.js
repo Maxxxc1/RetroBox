@@ -3,7 +3,7 @@ const { User, Game, GameStatus } = require('../models');
 
 const userData = require('./userData.json');
 const gameData = require('./gameData.json');
-const gameStatus = require('./GameStatus.json');
+const gameStatus = require('./gameStatus.json');
 
 
 const seedDatabase = async () => {
