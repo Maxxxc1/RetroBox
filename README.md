@@ -60,7 +60,13 @@
   
   ## Credits
 
-  [Alexis Merino](https://github.com/AlexM745) 
+  [Erin O](https://github.com/RinOrtega)
+
+  [Max C](https://github.com/Maxxxc1)
+
+  [Clinton S](https://github.com/DoughShy)
+
+  [Alexis Merino](https://github.com/AlexM745)
   
 
   ## Contribution
