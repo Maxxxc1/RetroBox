@@ -4,7 +4,7 @@
 
   ## Description
 
-  This application is a 
+ RetroBox is an application for gamers to converge to and see what retro games they have completed, are playing and wish to complete. 
 
   Built with:
 
@@ -32,11 +32,6 @@
 
 ```
 
-## Acceptance Criteria
-
-```md
-
-```
 
   ## Installation
 
@@ -59,7 +54,9 @@
 
   
   ## Usage
-
+    1. Click on login to see the login and sign up forms.
+    2. After you sign up or login you will directed to your profile. 
+    3. You will be able to see the games you have completed, are playing and wish to complete.
   
   ## Credits
 
