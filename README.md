@@ -1,10 +1,13 @@
-# RetoBox
+# RetroBox
+
+RetroBox “Keep Your Retro Games in One Place”
+
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
 
   ## Description
 
- RetroBox is an application for gamers to converge to and see what retro games they have completed, are playing and wish to complete. 
+ RetroBox is an essential tool for enthusiasts and collectors alike, meticulously crafted to streamline the management of retro gaming collections. With RetroBox, your retro gaming journey is simple and organized. No more forgotten games or scattered notes—just endless fun and nostalgia at your fingertip! 
 
   Built with:
 
@@ -20,7 +23,6 @@
 
   ## Table of Contents
   - [User Story](#user-story)
-  - [Acceptance Criteria](#acceptance-criteria)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -29,29 +31,8 @@
   ## User Story
 
 ```md
-
+User wishes to play Retro games and not forget which ones user has played and wishes to organize users retro games in an online library. User opens website and moves mouse to “sign up” for a new profile. Member chooses username and password. After setting up profile, user chooses the games and put games user wants to play in wishlist. After user has finished with game, user can set the game to a “completed” game.
 ```
-
-
-  ## Installation
-
-  In order to use this application you will need `git clone` this project repository to your computer. Then write on your terminal the the following commands:
-
-  `npm i ` For the required pakages.
-
-  After open up your terminal in the db folder and run the following commands to create the data base on Postgres and get the seeds ino the database:
-
- Run this command on the db folder:
-  `psql -U postgres` 
-
-  `\i schema.sql`
-
-  Run this command on the root folder of the project.
-  
-  `node seeds/seed.js`
-
-  Finally after make the .env.EXAMPLE file into an .env and add your user and password for your Postgres login to connect to the database and use the application.
-
   
   ## Usage
     1. Click on login to see the login and sign up forms.
