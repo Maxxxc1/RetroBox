@@ -226,7 +226,26 @@
     "completed": false,
     "wish": true
 
+  },
+
+  {
+    "user_id": 3,
+    "game_id": 6,
+    "playing": false, 
+    "completed": false,
+    "wish": true
+
+  },
+
+  {
+    "user_id": 3,
+    "game_id": 1,
+    "playing": false, 
+    "completed": false,
+    "wish": true
+
   }
+
  
 ]
 
