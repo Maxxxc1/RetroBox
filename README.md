@@ -19,7 +19,9 @@ RetroBox “Keep Your Retro Games in One Place”
  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
   ## Deployed website
-    
+     
+  ## Screenshots
+ ![screenshot](./assets/Screenshot%202024-05-07%20at%209.36.01 PM.png)
 
   ## Table of Contents
   - [User Story](#user-story)
