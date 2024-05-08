@@ -37,6 +37,9 @@
         <!-- Call helper function with triple brackets to render the emoji span as HTML -->
         <img class="sm_img" src="{{game.img_url}}" alt="{{game.description}}"> <!-- you only add this alt text and description it exists -->
     </div>
+    <div class="">
+      <button class="btn btn-sm btn-danger" data-id="{{game.id}}">Remove</button>
+    </div>
   </div>
   {{/each}}
 </div>
