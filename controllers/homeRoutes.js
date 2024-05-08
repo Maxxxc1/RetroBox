@@ -88,13 +88,10 @@ router.get('/profile', withAuth, async (req, res) => {
     const gamesPlaying = userGamesPlayingData.map((game) => game.get(({ plain: true})));
     const gamesWishlist = userGamesWishlistData.map((game) => game.get(({ plain: true})));
 
-    //console.log(userGamesCompleted);
     console.log(gamesCompleted);
 
 
-    
-    //console.log('Test' + games);
-    res.render('profile', {
+      res.render('profile', {
       user, gamesCompleted, gamesPlaying, gamesWishlist,
       logged_in: true
     });
@@ -122,30 +119,6 @@ router.delete('/profile/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-// router.get('/blog/:id', async (req, res) => {
-//   try {
-//     const blogData = await Blog.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-
-//     const blog = blogData.get({ plain: true });
-
-//     const test = {test: "hello"}
-
-//     res.render('blog', {
-//       ...test,
-//       logged_in: req.session.logged_in
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
